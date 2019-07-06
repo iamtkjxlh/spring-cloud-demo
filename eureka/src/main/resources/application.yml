@@ -1,0 +1,16 @@
+# 指定生效的配置
+spring:
+  profiles:
+    active: dev
+#服务器端口号
+server:
+  port: 8761
+#服务配置
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

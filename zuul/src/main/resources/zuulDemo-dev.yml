@@ -1,0 +1,7 @@
+
+### 网关配置
+zuul:
+  routes:
+    demo:
+      path: /demo/**
+      serviceId: springboot-demo
